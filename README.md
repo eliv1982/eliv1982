@@ -219,7 +219,7 @@ Repository:
 
 - Telegram-боты с API-интеграциями;
 - AI-ассистенты для бизнеса и юридических задач;
-- адаптация решений под разные LLM-провайдеры: OpenAI, YandexGPT, GigaChat, OpenRouter, ProxiAPI, DeepSeek, Qwen и другие;
+- адаптация решений под разные LLM-провайдеры: OpenAI, YandexGPT, GigaChat, OpenRouter, ProxyAPI, DeepSeek, Qwen и другие;
 - RAG-системы для работы с базами знаний;
 - Python-инструменты для автоматизации и обработки данных;
 - MVP-решения для проверки бизнес-гипотез.
