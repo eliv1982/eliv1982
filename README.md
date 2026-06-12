@@ -165,7 +165,7 @@ Repository: https://github.com/eliv1982/customer-review-mcp-assistant
 
 Tech stack: Python, LangChain, OpenAI-compatible LLM, Streamlit, pytest, API integrations.
 
-Repository: https://github.com/eliv1982/ai-agent-toolbox-homework
+Repository: https://github.com/eliv1982/ai-agent-toolbox
 
 ---
 
