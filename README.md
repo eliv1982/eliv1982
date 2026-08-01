@@ -1,274 +1,138 @@
 # Hi, I'm Elena 👋
 
-**Lawyer | AI Automation | Prompt Engineering | Vibe Coding | Telegram Bots | RAG Assistants**
+**Legal Practice Lead | Corporate & Project Finance | Applied AI Automation**
 
-I combine legal expertise with practical AI automation skills.  
-I create AI assistants, Telegram bots and MVP solutions for tasks involving documents, client requests, knowledge bases and structured data. I work with LLM APIs and can adapt solutions to different model providers.
+I am a legal and finance professional with 19+ years of experience in banking and corporate environments, specializing in corporate and project finance, syndicated lending, international transactions, and complex cross-border matters.
 
----
+Alongside my legal career, I design and build applied AI systems for knowledge-intensive and business workflows.
 
-# Привет, я Елена 👋
+My work sits at the intersection of:
 
-**Юрист | AI-автоматизация | промпт-инжиниринг | вайб-кодинг | Telegram-боты | RAG-ассистенты**
+- legal and financial expertise;
+- AI automation and LLM applications;
+- business process analysis;
+- knowledge management;
+- secure, production-oriented software delivery.
 
-Я юрист, специализируюсь на правовом сопровождении финансовых сделок и международных проектов. Дополнительно развиваю практическое направление AI-автоматизации, промпт-инжиниринга и вайб-кодинга.
-
-Создаю AI-ассистентов, Telegram-ботов и MVP-решения для задач, где важно быстро обрабатывать информацию, структурировать данные, работать с документами, клиентскими запросами и базами знаний.
-
----
-
-## Чем могу быть полезна
-
-- AI-ассистент для ответов по базе знаний компании;
-- Telegram-бот для консультаций, заявок, уведомлений или клиентской поддержки;
-- автоматизация обработки отзывов, обращений, документов и текстовых данных;
-- RAG-ассистент: поиск и ответы по внутренним материалам, регламентам, инструкциям или юридическим документам;
-- прототип сервиса или MVP для проверки бизнес-гипотезы;
-- интеграции через API, Telegram, Google Sheets, n8n и Python, включая подключение разных LLM-провайдеров под задачу проекта;
-- работа с базами данных SQL для хранения и обработки данных.
+I approach both legal and technical projects in the same way: deconstruct the process, identify requirements, risks, decision points, and bottlenecks, and translate them into a structured, workable solution.
 
 ---
 
-## Мой профессиональный фокус
+## What I build
 
-Моя сильная сторона — сочетание юридической экспертизы, системного мышления, навыков работы с AI и понимания человеческой коммуникации.
-
-Благодаря опыту в праве я внимательно работаю с требованиями, рисками, структурой документов и точностью формулировок.
-
-В AI-проектах стараюсь проектировать решения не под одну конкретную модель, а под задачу: выбираю или адаптирую LLM-провайдера, промпты, структуру данных и сценарий работы в зависимости от требований проекта.
-
-Психологическое образование со специализацией в конфликтологии и медиации помогает проектировать более понятные и аккуратные сценарии взаимодействия с пользователем.
-
-В проектах делаю акцент не только на технологии, но и на практической пользе для бизнеса:
-
-- снижение ручной нагрузки;
-- ускорение обработки информации;
-- повышение качества клиентского сервиса;
-- создание удобных инструментов для команды;
-- структурирование сложных данных и документов.
+- AI assistants for internal knowledge and document workflows
+- RAG systems for grounded answers based on domain-specific sources
+- Business intake, triage, routing, and decision-support services
+- Workflow automation and API integrations
+- Telegram bots and internal business tools
+- Full-stack MVPs with databases, audit trails, authentication, testing, and deployment
 
 ---
 
-## Tech stack
+## Selected projects
 
-### AI & Prompt Engineering
+### [Business Intake & Triage Assistant](https://github.com/eliv1982/business-intake-triage-assistant)
 
-- Daily work with LLMs: ChatGPT / GPT models, DeepSeek, Qwen, Perplexity, Gemini, Grok
-- LLM APIs and providers: OpenAI API / ProxyAPI, YandexGPT, GigaChat, OpenRouter
-- Prompt Engineering
-- RAG
-- LLM Integrations
-- AI Assistants
-- AI Response Evaluation
-- Model comparison and adaptation for business tasks
+An end-to-end AI service for processing business requests, extracting structured facts, identifying the appropriate specialist route, generating customer responses, and preserving an audit trail.
 
-### Development
-
-- Python
-- Telegram Bot API
-- REST API
-- JSON
-- Git
-- GitHub
-- Cursor
-
-### Data & Storage
-
-- SQL
-- SQLite
-- PostgreSQL
-- CSV
-- Google Sheets
-
-### Automation
-
-- n8n
-- API Integrations
-- Workflow Automation
+**Highlights:** FastAPI, OpenAI Structured Outputs, deterministic decision logic, SQLAlchemy, SQLite, TypeScript frontend, automated tests.
 
 ---
 
-## Featured projects
+### [Vibe Order Infrastructure](https://github.com/eliv1982/vibe-order-infra)
 
-### 🌐 ElivCloud Flask Portfolio Site
+A production-oriented full-stack order intake and analytics platform with secure administration, behavioral metrics, explainable request scoring, and automated deployment.
 
-Личный сайт-портфолио в сфере AI automation, prompt engineering, RAG-ассистентов и AI-ботов.
-
-Что реализовано:
-
-* главная страница с позиционированием и описанием специализации;
-* блок пользы для клиента;
-* раздел кейсов и отдельные страницы проектов;
-* форма контактов;
-* простая админка для просмотра заявок;
-* SQLite database;
-* responsive layout на Flask, Jinja2, SQLAlchemy и Bootstrap.
-
-Бизнес-польза:
-
-* показывает услуги и кейсы в формате, понятном потенциальному заказчику;
-* помогает собрать проекты в единую витрину;
-* демонстрирует не только код, но и умение оформить результат как работающий web-продукт.
-
-Tech stack: Python, Flask, Jinja2, SQLAlchemy, SQLite, Bootstrap, HTML, CSS, JavaScript.
-
-Repository: https://github.com/eliv1982/elivcloud-flask-site
+**Highlights:** FastAPI, PostgreSQL, Vite, TypeScript, JWT, Argon2id, Docker, Nginx, HTTPS, CI/CD, GitHub Actions.
 
 ---
 
-### 🧩 Customer Review MCP Assistant
+### [Mini CRM with Google Reports](https://github.com/eliv1982/mini-crm-google-reports)
 
-MCP-style Telegram-ассистент для малого бизнеса, который помогает работать с клиентскими отзывами.
+A CRM system for managing clients, deals, and tasks, with a desktop interface and automated analytical reports in Google Sheets and Google Drive.
 
-Что реализовано:
-
-* FastAPI MCP-style server с инструментами для работы с отзывами;
-* Telegram-бот на aiogram 3;
-* SQLite-хранилище отзывов;
-* поиск отзывов, фильтрация по рейтингу, статистика;
-* генерация черновиков ответов клиентам;
-* LLM-router, который выбирает нужный инструмент по запросу пользователя;
-* разделение ответственности между сервером, ботом и LLM.
-
-Бизнес-польза:
-
-* снижает ручную нагрузку на поддержку;
-* помогает быстрее реагировать на негативные отзывы;
-* структурирует обратную связь клиентов;
-* показывает, как можно подключать AI-инструменты к реальной бизнес-логике.
-
-Tech stack: Python, FastAPI, aiogram 3, SQLite, OpenAI API, JSON Schema, MCP-style architecture.
-
-Repository: https://github.com/eliv1982/customer-review-mcp-assistant
+**Highlights:** FastAPI, SQLite, Tkinter, Docker Compose, OAuth 2.0, Google Drive API, Google Sheets API, automated tests.
 
 ---
 
-### 🧰 AI Agent Toolbox
+### [Haystack Team Chat Bot](https://github.com/eliv1982/haystack-team-chat-bot)
 
-Локальный AI-agent toolbox с CLI и web-интерфейсом Streamlit, демонстрирующий работу LLM с набором инструментов.
+A Telegram assistant for structured team discussions, session-based memory, grounded summaries, decisions, and action items.
 
-Что реализовано:
-
-* 11 инструментов: web search, weather, crypto, files, memory, FX rates, QR codes, reminders, calculator, unit conversion, text stats;
-* CLI-интерфейс;
-* русскоязычный Streamlit-интерфейс;
-* память агента;
-* логирование действий;
-* тесты deterministic tools;
-* единый каталог инструментов.
-
-Бизнес-польза:
-
-* показывает, как LLM может работать не только как чат, но и как агент с инструментами;
-* демонстрирует подход к созданию персонального AI-помощника;
-* может быть основой для внутренних бизнес-ассистентов и автоматизаций.
-
-Tech stack: Python, LangChain, OpenAI-compatible LLM, Streamlit, pytest, API integrations.
-
-Repository: https://github.com/eliv1982/ai-agent-toolbox
+**Highlights:** Haystack, Pinecone, RAG, aiogram 3, session management, semantic filtering, LLM pipelines.
 
 ---
 
-### ⚖️ Legal RAG Assistant for Independent Guarantees
+### [Legal RAG Assistant for Independent Guarantees](https://github.com/eliv1982/rag-assistant-independent-guarantees)
 
-Юридический RAG-ассистент для работы с материалами по независимым гарантиям.
+A legal RAG assistant working with materials on independent guarantees, Russian civil law, URDG 758, and judicial practice.
 
-Что реализовано:
-
-* подготовка юридической базы знаний;
-* поиск релевантных фрагментов по вопросу пользователя;
-* генерация ответа на основе найденных источников;
-* работа с юридическими текстами и терминологией;
-* кэширование повторяющихся вопросов;
-* ускорение первичного анализа правовой информации.
-
-Бизнес-польза:
-
-* помогает быстрее ориентироваться в большом объеме правовой информации;
-* снижает ручную нагрузку при работе с документами;
-* может использоваться как прототип внутреннего юридического AI-ассистента;
-* подходит для задач, где важны точность, структура и работа с источниками.
-
-Tech stack: Python, OpenAI API, RAG, ChromaDB, SQLite, Prompt Engineering, RAGAS.
-
-Repository: https://github.com/eliv1982/rag-assistant-independent-guarantees
+**Highlights:** Python, OpenAI API, ChromaDB, SQLite caching, prompt engineering, RAGAS evaluation.
 
 ---
 
-### 🌦️ Weather Teller Bot
+### [Customer Review MCP Assistant](https://github.com/eliv1982/customer-review-mcp-assistant)
 
-Telegram-бот для прогноза погоды, сравнения локаций и AI-пояснений простым языком.
+An MCP-style assistant for customer review monitoring, analytics, tool routing, and AI-generated response drafts.
 
-Что реализовано:
-
-* получение прогноза погоды через внешний API;
-* сравнение погоды в двух локациях;
-* работа с выбранными датами;
-* хранение пользовательских данных в PostgreSQL;
-* кэширование повторяющихся AI-сценариев;
-* AI-надстройка для понятных формулировок;
-* Telegram-интерфейс для взаимодействия с пользователем.
-
-Бизнес-польза:
-
-* показывает, как быстро запускать полезные MVP-сервисы через Telegram;
-* может быть адаптирован под тревел-сервис, доставку, локальный бизнес или сервис мероприятий;
-* демонстрирует работу с API, базой данных, пользовательскими сценариями и AI-слоем.
-
-Tech stack: Python, Telegram Bot API, PostgreSQL, OpenWeather API, OpenAI API, caching, Docker.
-
-Repository: https://github.com/eliv1982/weather_teller_bot
+**Highlights:** FastAPI, aiogram 3, SQLite, OpenAI API, JSON Schema, MCP-style architecture.
 
 ---
 
-### 🧪 Open Model Tone Fine-tuning
+## Core technologies
 
-Демонстрационный проект по LoRA fine-tuning открытой русскоязычной модели под tone of voice бизнес-коммуникации.
+**AI and knowledge systems**
 
-Что реализовано:
+`LLM APIs` · `Prompt Engineering` · `RAG` · `AI Agents` · `Structured Outputs` · `Vector Databases` · `Evaluation`
 
-* датасет из 100 пар instruction/output на русском языке;
-* обучение LoRA-адаптера;
-* inference-скрипты для тестовой генерации;
-* форматирование данных под instruction/response;
-* сравнение подхода дообучения модели для задач клиентской коммуникации.
+**Backend and data**
 
-Бизнес-польза:
+`Python` · `FastAPI` · `SQLAlchemy` · `REST API` · `PostgreSQL` · `SQLite` · `Pydantic`
 
-* показывает, как можно адаптировать тон ответов AI-ассистента под задачи бизнеса;
-* полезно для клиентской поддержки, сервисных команд и AI-автоматизации;
-* демонстрирует понимание не только prompt engineering, но и базового fine-tuning pipeline.
+**Interfaces and integrations**
 
-Tech stack: Python, PyTorch, Hugging Face Transformers, PEFT, LoRA, datasets, accelerate.
+`TypeScript` · `Vite` · `Telegram Bot API` · `Google Sheets API` · `Google Drive API`
 
-Repository: https://github.com/eliv1982/open-model-tone-finetuning
+**Infrastructure and delivery**
+
+`Docker` · `Docker Compose` · `Nginx` · `GitHub Actions` · `CI/CD` · `Linux` · `HTTPS`
 
 ---
 
-## GitHub stats
+## Professional focus
 
-![Elena's GitHub stats](https://github-readme-stats.vercel.app/api?username=eliv1982&show_icons=true&theme=tokyonight)
+I am particularly interested in applied AI solutions for:
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=eliv1982&layout=compact&theme=tokyonight)
-
----
-
-## Contacts
-
-- Telegram: [@elena_shlenskova](https://t.me/elena_shlenskova)
-- GitHub: [github.com/eliv1982](https://github.com/eliv1982)
+- legal and financial workflows;
+- internal business operations;
+- document-heavy and knowledge-intensive processes;
+- request classification and routing;
+- decision support and explainable automation;
+- secure integration of LLMs into real business systems.
 
 ---
 
 ## Current focus
 
-Сейчас я формирую портфолио практических проектов в направлениях:
+- Building production-oriented AI automation for legal, financial, and internal business workflows
+- Improving evaluation, observability, security, and human-in-the-loop controls for LLM systems
+- Deepening practical skills in Python, backend architecture, RAG, AI agents, and workflow orchestration
+- Developing personal applied AI projects alongside my legal career
 
-- Telegram-боты с API-интеграциями;
-- AI-ассистенты для бизнеса и юридических задач;
-- адаптация решений под разные LLM-провайдеры: OpenAI, YandexGPT, GigaChat, OpenRouter, ProxyAPI, DeepSeek, Qwen и другие;
-- RAG-системы для работы с базами знаний;
-- Python-инструменты для автоматизации и обработки данных;
-- MVP-решения для проверки бизнес-гипотез.
+---
 
-Профиль активно обновляется по мере доработки проектов, README, скриншотов и демонстрационных материалов.
+> This profile evolves with my projects: repositories, documentation, screenshots, demos, and deployment notes are updated as each solution matures.
+
+---
+
+## GitHub activity
+
+![Elena's GitHub stats](https://github-readme-stats.vercel.app/api?username=eliv1982&show_icons=true&hide_title=true&hide_rank=true)
+
+---
+
+## Connect
+
+- [Personal website](https://elivcloud.org)
+- [LinkedIn](https://www.linkedin.com/in/elena-shlenskova-9609b7133/)
+- [Telegram](https://t.me/elena_shlenskova)
