@@ -125,12 +125,6 @@ I am particularly interested in applied AI solutions for:
 
 ---
 
-## GitHub activity
-
-![Elena's GitHub stats](https://github-readme-stats.vercel.app/api?username=eliv1982&show_icons=true&hide_title=true&hide_rank=true)
-
----
-
 ## Connect
 
 - [Personal website](https://elivcloud.org)
