@@ -33,7 +33,7 @@ RAG, voice, vision and image workflows currently live in Telegram; the current w
 ---
 
 ### [Site Insight AI](https://github.com/eliv1982/site-insight-ai)
-**React / TypeScript · Structured AI · External Data · SSRF-aware Fetching**
+**React · FastAPI · Structured AI · SSRF-aware Fetching**
 
 A compact full-stack application for analyzing a single public web page.
 
