@@ -1,217 +1,145 @@
 # Hi, I'm Elena 👋
 
-### Applied AI Engineer with deep legal-domain expertise
+### Applied AI Engineer with legal-domain expertise
 
-I build applied AI systems that combine LLMs with deterministic application logic, retrieval, APIs, databases, authentication and user-facing products.
+I build LLM-backed applications that combine model capabilities with deterministic application logic, retrieval, APIs, databases, authentication, external integrations and user-facing products.
 
-My focus is not on model demos in isolation, but on **reliable AI-enabled software**: structured outputs, validation, evidence boundaries, explicit failure handling, security controls and production-ready infrastructure.
+I care most about the engineering around the model: typed contracts, explicit failure behavior, retrieval and ownership boundaries, deterministic checks, safe fallbacks and deployable software.
 
-Alongside engineering, I have a long-standing legal career focused primarily on supporting businesses. That background gives me a practical perspective on ambiguity, risk, evidence, rules and the consequences of incorrect decisions — particularly useful when building AI systems for high-context and high-responsibility domains.
-
-## What I build
-
-- **Applied AI systems** — controlled LLM workflows, structured generation, deterministic validation and human-review paths
-- **RAG and knowledge systems** — private and curated corpora, vector retrieval, source grounding and retrieval boundaries
-- **Multimodal products** — text, voice, documents, vision and image generation
-- **Backend and full-stack applications** — FastAPI, web interfaces, PostgreSQL, authentication, persistent state and external APIs
-- **Production infrastructure** — Docker, CI/CD, Traefik, HTTPS, migrations, health checks, backups and operational runbooks
-- **Personal products and technical explorations** — real-use projects for experimenting with provider orchestration, scheduling, personalization, third-party APIs and multimodal UX
+Alongside engineering, I have a long-standing legal career focused primarily on supporting businesses. That experience gives me a practical perspective on ambiguity, evidence, risk, rules and the consequences of unsupported conclusions.
 
 ## Selected work
 
 ### [AI Specification Review & Risk Assistant](https://github.com/eliv1982/ai-spec-review-risk-assistant)
-**Applied AI · Structured Outputs · Risk Analysis · FastAPI · Production**
+**Applied AI · Structured Outputs · Backend QC · FastAPI · Self-hosted**
 
-A production-deployed assistant for structured specification review and risk analysis.
+A self-hosted assistant for structured specification review and risk analysis, deployed behind a Basic Auth perimeter.
 
-The system combines LLM-based analysis with deterministic orchestration, strict output schemas, persistence, controlled fallbacks and export workflows. The emphasis is on keeping model behavior inside explicit application boundaries rather than treating generated output as inherently trustworthy.
+Model drafts are converted into typed final outputs through backend-owned QC, closed reason codes, persistence and safe fallbacks rather than being accepted directly as final answers.
+
+**Evidence:** [review contract](https://github.com/eliv1982/ai-spec-review-risk-assistant/blob/main/docs/REVIEW_SCHEMA.md) · [CI](https://github.com/eliv1982/ai-spec-review-risk-assistant/actions)
 
 ---
 
 ### [Multimodal Learning Assistant](https://github.com/eliv1982/multimodal-learning-assistant)
-**Multimodal AI · RAG · Web + Telegram · OAuth · PostgreSQL · Production**
+**Private RAG · Multimodal Telegram · OAuth · PostgreSQL · Self-hosted**
 
-A multimodal learning product combining chat, private-document retrieval, voice, document processing and cross-channel identity.
+An invite-only learning system with per-user private documents, retrieval ownership boundaries, GitHub OAuth / Telegram account linking and persistent PostgreSQL state.
 
-The project evolved from a narrower assistant into a production system with authenticated users, private data boundaries, persistent services and both web and Telegram interfaces.
+RAG, voice, vision and image workflows currently live in Telegram; the current web chat is text-only.
 
----
-
-### [Vibe Order Infrastructure](https://github.com/eliv1982/vibe-order-infra)
-**Backend · PostgreSQL · Migrations · Security · CI/CD · Infrastructure**
-
-A backend and infrastructure project focused on reliable application architecture rather than model interaction.
-
-It demonstrates database lifecycle management, migrations, validation, security boundaries, deployment design and automated verification — the engineering layer that AI-enabled products still need underneath the AI.
-
----
-
-### [Plain English](https://github.com/eliv1982/plain-english)
-**AI Product · Voice · Memory · n8n Automation · Web + Telegram · Production**
-
-An actively developed personal product for practical English learning.
-
-It combines conversational and voice interaction, persistent learning state, mistake-pattern memory and **n8n-powered automation workflows** across web and Telegram interfaces. The project uses n8n as part of the application workflow and integration layer rather than as a standalone demo.
-
-The production baseline is stable while new capabilities continue to be added iteratively.
+**Evidence:** [repository](https://github.com/eliv1982/multimodal-learning-assistant) · [CI](https://github.com/eliv1982/multimodal-learning-assistant/actions)
 
 ---
 
 ### [Site Insight AI](https://github.com/eliv1982/site-insight-ai)
-**Full Stack · Structured AI · External Data · SSRF-Aware Fetching**
+**React / TypeScript · Structured AI · External Data · SSRF-aware Fetching**
 
-A compact full-stack application for turning website content into structured AI-generated insight.
+A compact full-stack application for analyzing a single public web page.
 
-Its main engineering focus is controlled external-data ingestion: bounded fetching, URL and network safety, structured model output and predictable processing limits.
+Its fetch boundary validates scheme and port, rejects non-global DNS results, revalidates redirects, bounds decompression and returns strictly validated structured output. Residual limitations are documented rather than hidden.
 
----
-
-### [Business Intake & Triage Assistant](https://github.com/eliv1982/business-intake-triage-assistant)
-**Applied AI · Deterministic Routing · Human Review · FastAPI · Production**
-
-A business-intake system in which the LLM interprets incoming requests, while deterministic application logic retains control over routing, clarification, escalation and safe failure.
-
-The project demonstrates a reusable pattern I use across applied AI work:
-
-**LLM proposes → application validates → deterministic logic decides what happens next.**
-
-## Legal AI & domain projects
-
-My legal background lets me work on a class of AI problems where domain boundaries, source quality and the cost of unsupported conclusions matter as much as model capability.
-
-These projects are not positioned as substitutes for professional legal analysis. They are engineering case studies in applying AI to complex, evidence-sensitive legal workflows.
-
-### [RAG Assistant for Independent Guarantees](https://github.com/eliv1982/rag-assistant-independent-guarantees)
-**Legal RAG · Curated Corpus · Source Grounding · Russian Law**
-
-A retrieval-based assistant built around a curated corpus of Russian legislation, regulatory materials and court guidance relating to independent guarantees.
-
-The project focuses on retrieval quality, source attribution, corpus boundaries and grounded answers rather than unrestricted legal generation.
-
-**Corpus snapshot:** materials were collected and verified as of **6 October 2026**. The repository is a portfolio case study and is not presented as a continuously updated legal reference.
-
----
-
-### [Court Decision Extractor](https://github.com/eliv1982/court-decision-extractor)
-**Legal NLP · Structured Extraction · Documents · Validation**
-
-A document-processing project for extracting structured information from court decisions.
-
-Its focus is turning long, inconsistently formatted legal texts into predictable structured data while preserving the distinction between extracted facts and generated interpretation.
+**Evidence:** [fetch / analysis boundary](https://github.com/eliv1982/site-insight-ai/blob/main/app/services/analyzer.py) · [CI](https://github.com/eliv1982/site-insight-ai/actions)
 
 ---
 
 ### [Telegram Legal Document Review Assistant](https://github.com/eliv1982/telegram-legal-doc-review-assistant)
-**Document AI · Telegram · Legal Review · Controlled Analysis**
+**Document AI · Verifiable Facts · Structured Review · CI**
 
-A document-review assistant for working with uploaded legal materials through a conversational interface.
+A legal-document review assistant designed to keep code-verifiable facts separate from model interpretation.
 
-The project explores how document parsing, structured analysis and explicit review boundaries can be combined in a practical legal workflow without presenting model output as authoritative legal advice.
+Quotes count as evidence only when they occur verbatim in the extracted source text, while checksum results are handled deterministically rather than being delegated to the model.
+
+The repository uses synthetic demo assets and locked-dependency CI so the engineering behavior can be reviewed without exposing real documents.
+
+**Evidence:** [repository and rule table](https://github.com/eliv1982/telegram-legal-doc-review-assistant) · [CI](https://github.com/eliv1982/telegram-legal-doc-review-assistant/actions)
+
+---
+
+### [Plain English](https://github.com/eliv1982/plain-english)
+**Voice · Memory · n8n · Web + Telegram · Personal Product**
+
+An actively developed English-learning product that grew from a study project.
+
+It combines conversational and voice interaction, persistent learning state, mistake-pattern memory and a nightly n8n workflow across web and Telegram interfaces.
+
+The product continues to be hardened iteratively rather than being presented as a finished platform.
+
+**Evidence:** [architecture and scope decisions](https://github.com/eliv1982/plain-english/blob/main/docs/architecture-scope.md)
+
+---
+
+### [Vibe Order Infrastructure](https://github.com/eliv1982/vibe-order-infra)
+**PostgreSQL · Migrations · Least Privilege · CI**
+
+Originally an infrastructure assignment, later hardened into a database-lifecycle and deployment case.
+
+The project covers three-role PostgreSQL least privilege, fail-closed Alembic migrations, legacy-database adoption and migration rehearsal. Its live deployment was intentionally decommissioned after verification; continuous deployment is not implemented.
+
+**Evidence:** [repository](https://github.com/eliv1982/vibe-order-infra) · [CI](https://github.com/eliv1982/vibe-order-infra/actions)
+
+## Additional applied AI case
+
+### [Business Intake & Triage Assistant](https://github.com/eliv1982/business-intake-triage-assistant)
+
+A feature-frozen demo on synthetic data where the LLM interprets incoming requests while deterministic application logic controls human review, clarification, routing and safe failure.
+
+Its decision layer is a compact example of the pattern:
+
+**LLM proposes → application validates → deterministic logic decides what happens next.**
+
+**Evidence:** [decision service](https://github.com/eliv1982/business-intake-triage-assistant/blob/main/app/services/decision_service.py) · [CI](https://github.com/eliv1982/business-intake-triage-assistant/actions)
+
+## Legal AI & domain work
+
+My legal background is most useful when the system must distinguish between what the evidence supports, what the corpus contains and what the model merely infers.
+
+### [RAG Assistant for Independent Guarantees](https://github.com/eliv1982/rag-assistant-independent-guarantees)
+**Legal RAG · Curated Corpus · Source Boundaries · Russian Law**
+
+A legal-RAG case built around a curated corpus of legislation, regulatory materials and court guidance concerning independent guarantees.
+
+The interesting part is not unrestricted legal generation, but layered sources, scope boundaries, attribution and the distinction between **“not found in this corpus”** and **“not part of the law.”**
+
+**Corpus note:** this is a curated snapshot. Exact retrieval dates and consolidated-edition metadata were not preserved, so the repository does **not** claim that the corpus is current as of a specific date. Current law should be verified against official sources.
+
+### [Court Decision Extractor](https://github.com/eliv1982/court-decision-extractor)
+
+A smaller CLI experiment in structured extraction from court decisions. Structured output validates the shape of the response, not the factual correctness of model-generated summaries or findings.
 
 ## Personal products & technical explorations
 
-I also build personal products to explore technologies and interaction patterns outside formal portfolio cases.
+Smaller products give me a place to test APIs, multimodal interaction and reliability under real use without pretending that every experiment is a platform.
 
-These projects are intentionally practical: they are used to test multimodal UX, external providers, scheduling, personalization, state management and operational reliability under real conditions.
-
-### [Weather Teller](https://github.com/eliv1982/weather-teller-bot)
-**External APIs · Provider Reconciliation · Timezones · Alerts · Production**
-
-A weather assistant that combines deterministic weather data with an AI interpretation layer.
-
-What started as a simple API exercise evolved into a reliability-focused product involving multiple data providers, discrepancies between forecast and observed conditions, timezone and DST handling, scheduled alerts, concurrency controls and production operation.
-
----
-
-### [Rise & Shine](https://github.com/eliv1982/rise-and-shine-bot)
-**Generative AI · Images · Voice · Scheduling · PostgreSQL · Production**
-
-A personalized content-delivery product combining generated text, images and voice with scheduled delivery.
-
-The engineering work includes multimodal generation, provider abstraction, scheduling semantics, quotas, persistence and failure handling for unattended delivery workflows.
-
----
-
-### [MoodMuse](https://github.com/eliv1982/moodmuse-bot)
-**Image Generation · Voice · Personalization · Bilingual UX**
-
-A smaller generative product focused on visual content, captions, voice and personalized interaction.
-
-I use it as a compact environment for experimenting with image-generation workflows, provider abstraction and multimodal product UX without the architectural weight of a larger application.
+- **[Weather Teller](https://github.com/eliv1982/weather-teller-bot)** — weather-provider comparison, PostgreSQL state, alerts and timezone / DST handling; currently a beta rather than a production service.
+- **[Rise & Shine](https://github.com/eliv1982/rise-and-shine-bot)** — scheduled text / image / voice delivery with a durable delivery ledger, atomic claims and explicit at-least-once semantics.
+- **[MoodMuse](https://github.com/eliv1982/moodmuse-bot)** — a smaller bilingual playground for image generation, voice and personalized multimodal UX.
 
 ## Engineering approach
 
-I use AI-assisted development extensively, but I treat AI tools as part of the engineering workflow rather than as autonomous decision-makers.
+I use AI-assisted development extensively, but I evaluate the result as software rather than treating the tool output as evidence of correctness.
 
-My typical process is:
+Three patterns recur across the portfolio:
 
-**define the problem → specify constraints and acceptance criteria → design → implement → test → independently review → verify → decide**
+- **Model output stays inside application boundaries.** In specification review and intake triage, typed contracts and deterministic decision logic decide what becomes an application action.
+- **Security boundaries are explicit.** Site Insight validates external network access before content reaches the model, and its remaining DNS-rebinding limitation is documented rather than silently ignored.
+- **Reliability claims are deliberately narrow.** Rise & Shine records delivery attempts durably and explicitly documents at-least-once behavior instead of claiming exactly-once delivery.
 
-A few principles recur across my projects:
+Independent AI review is part of my workflow, but architecture, scope, trade-offs, acceptance criteria and final approval remain human-controlled.
 
-- **Deterministic control around non-deterministic models.** LLMs can interpret, classify or propose; application logic controls what is accepted and what happens next.
-- **Explicit boundaries.** Authentication, data ownership, retrieval scope, external network access and failure behavior are designed deliberately rather than left implicit.
-- **Verification over confidence.** Tests, CI, smoke checks, independent reviews and production evidence matter more than whether an implementation looks plausible.
-- **Independent AI review.** I often use different models or tools for implementation and audit so that the same system is not effectively reviewing its own assumptions.
-- **Human ownership of trade-offs.** Architecture, scope, security decisions, acceptance criteria and final approval remain mine.
-- **Iterative hardening.** Many projects start small, then become more rigorous as real usage exposes assumptions, edge cases and operational constraints.
+My usual loop is:
 
-For me, AI-assisted engineering is most useful when it increases the speed of exploration **without lowering the standard of evidence required before something is accepted as correct**.
+**define → specify → build → test → independently review → verify → decide**
 
 ## Tech stack
 
-I prefer choosing tools around the problem rather than building around a fixed stack, but these recur across my projects:
+**Application engineering:** Python · FastAPI · Pydantic · PostgreSQL · SQLite · React · TypeScript · Vite
 
-**Languages & backend**  
-Python · FastAPI · Pydantic · REST APIs · asynchronous workflows
+**AI / retrieval:** OpenAI APIs · Anthropic models · structured outputs · embeddings · RAG · ChromaDB · Qdrant · LangChain where appropriate · text / voice / vision / image workflows
 
-**AI & retrieval**  
-OpenAI APIs · Anthropic models · structured outputs · embeddings · RAG · vector search · multimodal text / voice / vision / image workflows
+**Integrations:** Telegram · OAuth · external APIs · n8n
 
-**Data & state**  
-PostgreSQL · SQLite · Qdrant · migrations · persistent application state
-
-**Interfaces & integrations**  
-Web applications · Telegram bots · OAuth · external APIs · n8n workflow automation
-
-**Frontend**  
-React · Vite · HTML / CSS / JavaScript
-
-**Infrastructure & delivery**  
-Docker · Docker Compose · Linux · Traefik · HTTPS · GitHub Actions · CI/CD · health checks · backups · deployment and rollback runbooks
-
-**Engineering workflow**  
-Git · GitHub · automated testing · security review · independent AI-assisted code and architecture review
-
-## Current interests
-
-I am especially interested in problems where AI capability alone is not enough and the surrounding system has to provide reliability, context and control.
-
-Current areas I keep returning to include:
-
-- reliable patterns for combining LLM reasoning with deterministic software;
-- RAG systems with meaningful source and ownership boundaries;
-- multimodal interaction across text, documents, voice, vision and generated media;
-- long-lived AI products with persistent identity, memory and state;
-- practical Legal AI where traceability and evidence matter;
-- using real-world product behavior to discover assumptions that tests and prototypes miss.
-
-## Beyond the portfolio
-
-Most repositories here began with one of three things: a real problem, a technical question I wanted to answer, or simple curiosity.
-
-I tend to learn by building something small enough to understand, then making it increasingly less forgiving: adding real users, persistent data, external providers, deployment, failure cases and independent review.
-
-That progression — from **“can this work?”** to **“under what conditions can I trust it to work?”** — is probably the common thread across the portfolio.
-
-## Find your way around
-
-If you are new to the profile, the six projects in **Selected work** are the best place to start.
-
-For domain-specific work, see **Legal AI & domain projects**.  
-For smaller real-use products and technology experiments, see **Personal products & technical explorations**.
-
-Individual repositories contain their own architecture notes, setup instructions, tests and project-specific documentation.
+**Delivery:** Docker · Docker Compose · Linux · Traefik · HTTPS · GitHub Actions · CI · scripted / manual deployment · backups and runbooks
 
 ## Connect
 
